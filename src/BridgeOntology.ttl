@@ -799,7 +799,7 @@ fbo:producedByRule
     rdfs:range xsd:string ;
     rdfs:label "produced by rule"@en ;
     skos:definition "The identifier of the alignment rule that produced a type assertion."@en ;
-    rdfs:comment "Grounds sas:alignmentRule. Known values include 'consensus-promotion', 'temporal-detection', 'boolean-pair-configured', 'null-vocabulary-configured', 'unknown-assignment'."@en .
+    rdfs:comment "Grounds sas:alignmentRule. Known values (8): 'consensus-promotion', 'temporal-detection', 'temporal-detection-snp-evidence', 'boolean-pair-configured', 'null-vocabulary-configured', 'structural-passthrough', 'unknown-assignment', 'cism-validation-failed'. Note: both 'unknown-assignment' and 'cism-validation-failed' produce fbo:IndeterminateVariable — CQ-12 must account for both paths."@en .
 
 fbo:hasStructuralType
     rdf:type owl:DatatypeProperty ;
@@ -945,7 +945,7 @@ fbo:hasAlignmentMode
     rdfs:range xsd:string ;
     rdfs:label "has alignment mode"@en ;
     skos:definition "Records the operational mode of a semantic alignment process."@en ;
-    rdfs:comment "Grounds sas:alignmentMode. Known values: 'standalone', 'full-pipeline'. Applied as annotation on fbo:SemanticAlignmentProcess individuals."@en .
+    rdfs:comment "Grounds sas:alignmentMode. Known values: 'standalone', 'enriched'. Applied as annotation on fbo:SemanticAlignmentProcess individuals."@en .
 
 fbo:fandawsAvailable
     rdf:type owl:AnnotationProperty ;
